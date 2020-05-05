@@ -1,0 +1,3 @@
+com\son\oauth2\security\WebSecurityConfigurer.class
+com\son\oauth2\security\OAuth2Config.class
+com\son\oauth2\SpringOauth2Main.class

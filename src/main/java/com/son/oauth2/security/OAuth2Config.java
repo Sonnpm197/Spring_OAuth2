@@ -1,6 +1,7 @@
 package com.son.oauth2.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -19,6 +20,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
     private AuthenticationManager authenticationManager;
 
     @Autowired
+    @Qualifier("userDetailsServiceBean")
     private UserDetailsService userDetailsService;
 
     // ClientDetailsServiceConfigurer class supports two different types of
@@ -27,6 +29,11 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
                 .withClient("learningenglish")
+                .secret("{noop}thisissecret")
+                .authorizedGrantTypes("refresh_token", "password", "client_credentials")
+                .scopes("webclient", "mobileclient")
+                .and()
+                .withClient("quizlet")
                 .secret("{noop}thisissecret")
                 .authorizedGrantTypes("refresh_token", "password", "client_credentials")
                 .scopes("webclient", "mobileclient");

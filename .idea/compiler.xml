@@ -6,9 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring_SampleService" />
-        <module name="authentication-service" />
         <module name="Spring_OAuth2" />
+        <module name="Spring_SampleService" />
+        <module name="Spring_QuizletService" />
+        <module name="licensing-service" />
+        <module name="Spring_EurekaServer" />
+        <module name="organization-service" />
+        <module name="zuulsvr" />
+        <module name="authentication-service" />
+        <module name="Spring_Zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,9 +23,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring_EurekaServer" options="-parameters" />
       <module name="Spring_JwtSwaggerAuditing" options="-parameters" />
       <module name="Spring_OAuth2" options="-parameters" />
+      <module name="Spring_QuizletService" options="-parameters" />
       <module name="Spring_SampleService" options="-parameters" />
+      <module name="Spring_Zuul" options="-parameters" />
     </option>
   </component>
 </project>

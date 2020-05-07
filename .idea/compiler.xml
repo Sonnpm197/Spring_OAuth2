@@ -2,19 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_OAuth2" />
-        <module name="Spring_SampleService" />
         <module name="Spring_QuizletService" />
-        <module name="licensing-service" />
-        <module name="Spring_EurekaServer" />
-        <module name="organization-service" />
         <module name="zuulsvr" />
-        <module name="authentication-service" />
+        <module name="organization-service" />
         <module name="Spring_Zuul" />
+        <module name="licensing-service" />
+        <module name="Spring_ConfigServer" />
+        <module name="authentication-service" />
+        <module name="Spring_EurekaServer" />
+        <module name="Spring_SampleService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

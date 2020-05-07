@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/../Spring_QuizletService/pom.xml" />
         <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter7/licensing-service/pom.xml" />
         <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter7/zuulsvr/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring_ConfigServer/pom.xml" />
       </list>
     </option>
   </component>

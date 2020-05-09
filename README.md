@@ -22,11 +22,14 @@ https://www.cloudkarafka.com/blog/2018-07-04-cloudkarafka_what_is_zookeeper.html
 
 **Download (Do not download Zookeper/Kafka src files)**
 Zookeeper: https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.6.1/apache-zookeeper-3.6.1-bin.tar.gz
+
 Kafka: https://www.apache.org/dyn/closer.cgi?path=/kafka/2.5.0/kafka_2.12-2.5.0.tgz
 
 **Run zookeeper & kafka**
-zookepper: zkserver
-kafka: .\bin\windows\kafka-server-start.bat[space].\config\server.properties
+
+zookepper: <pre>zkserver</pre>
+
+kafka: <pre>.\bin\windows\kafka-server-start.bat .\config\server.properties</pre>
 
 **Handling kafka errors**
 1. The input line is too long. The syntax of the command is incorrect = change folder to short name (kafka_2.15 -> kafka)
@@ -39,8 +42,9 @@ https://app.diagrams.net/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1
 
 **Build and run**
 
-Run **mvn spring-boot:run** on ConfigServer, Eureka, Zuul, OAuth2 and Zipkin projects first
-Then **mvn spring-boot:run** on SampleService and QuizletService
+Run <pre>mvn spring-boot:run</pre> on ConfigServer, Eureka, Zuul, OAuth2 and Zipkin projects first
+
+Then <pre>mvn spring-boot:run</pre> on SampleService and QuizletService
 
 Run: curl --location --request POST 'http://localhost:8901/oauth/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
@@ -54,7 +58,9 @@ OR run on PostMan:
 
 POST http://localhost:8901/oauth/token
 
-Authorization Tab: Basic Auth/ Username: learningenglish & Password: thisissecret
+Authorization Tab: Basic Auth
+
+Username: learningenglish & Password: thisissecret
 
 Body Tab: form-data:
 1. grant_type: password

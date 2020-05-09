@@ -9,14 +9,13 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../Spring_SampleService/pom.xml" />
-        <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter7/authentication-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter7/organization-service/pom.xml" />
         <option value="$PROJECT_DIR$/../Spring_EurekaServer/pom.xml" />
         <option value="$PROJECT_DIR$/../Spring_Zuul/pom.xml" />
         <option value="$PROJECT_DIR$/../Spring_QuizletService/pom.xml" />
-        <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter7/licensing-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter7/zuulsvr/pom.xml" />
         <option value="$PROJECT_DIR$/../Spring_ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter9/organization-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../InActionSourceCode/spring-micro-services-in-action/spmia-chapter9/licensing-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring_JwtSwaggerAuditing/pom.xml" />
       </list>
     </option>
   </component>

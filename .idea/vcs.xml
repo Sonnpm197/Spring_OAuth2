@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$/../Spring_ConfigServer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Spring_Configuration" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Spring_EurekaServer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Spring_JwtSwaggerAuditing" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Spring_QuizletService" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Spring_SampleService" vcs="Git" />

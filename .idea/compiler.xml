@@ -8,19 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring_OAuth2" />
+        <module name="Spring_JwtSwaggerAuditing" />
         <module name="Spring_QuizletService" />
-        <module name="zuulsvr" />
         <module name="organization-service" />
-        <module name="Spring_Zuul" />
+        <module name="Spring_SampleService" />
         <module name="licensing-service" />
         <module name="Spring_ConfigServer" />
-        <module name="authentication-service" />
         <module name="Spring_EurekaServer" />
-        <module name="Spring_SampleService" />
+        <module name="Spring_Zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Spring_JwtSwaggerAuditing" target="1.8" />
+      <module name="authentication-service" target="1.8" />
+      <module name="zuulsvr" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

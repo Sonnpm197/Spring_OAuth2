@@ -29,6 +29,8 @@ Zookeeper: https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.6.1/apach
 
 Kafka: https://www.apache.org/dyn/closer.cgi?path=/kafka/2.5.0/kafka_2.12-2.5.0.tgz
 
+Redis for Window: https://github.com/microsoftarchive/redis/releases
+
 **Run zookeeper & kafka**
 
 zookepper: <pre>zkserver</pre>
@@ -40,12 +42,18 @@ kafka: <pre>.\bin\windows\kafka-server-start.bat .\config\server.properties</pre
 1. The input line is too long. The syntax of the command is incorrect = change folder to short name (kafka_2.15 -> kafka)
 2. classpath is empty. please build the project first e.g. by running 'gradlew jarall' = you download src file
 
+**Run redis**
+
+Unzip downloaded file and run redis-server.exe
+
 **Architecture**
 
 Notes: JWTSwaggerAuditing and SampleSleuth are not included in this architecture
 https://app.diagrams.net/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#R1VpNc6M4EP01PiaFkAXkmA9vdlMztdnyVnmSmwIKaIPBJURs59evZAQGCU8cygF8sVGDBHr9up%2FUMIG3y809w6voZxqQeGJbwWYC7ya2DYDliT9p2SoLskBhCRkNlG1vmNMPooyWsuY0IFnjQp6mMaerptFPk4T4vGHDjKXr5mWvady86wqHxDDMfRyb1gUNeFRYPWTt7X8SGka8mrE6s8TlxcqQRThI1zUTnE3gLUtTXhwtN7ckluiVuBT9%2FjhwtnowRhJ%2BTIf5%2FSKB2H5%2Bvfvx8J%2B%2FmP18ePrrAhajvOM4VxO%2BTZNXGs4JeydMPTjflmiwNE8CIge0JvBmHVFO5ivsy7NrQQBhi%2FgyFi0gDtXQhHGyOfjMoEJCcIikS8LZVlyiOpTYKfZA1VzvPQHKS6KaFxxlw8r5YTXwHh9xoCD6AlxTA64fBLOEJuEsCWOaRQvyUgCYM8xpmgyHoILs4srEzO4VM2RgZoBCkuBaxqpo%2BTHOMuqLyWccM26aa%2FAICNj2l4TyErqwNDzJs5cWrAx3G4V20drWW4%2BEUTFNQfXCWDwaCYykoOEtHj%2FNmU8%2BDy0xi5Dwzzhl%2Bq%2FmL9TirtLGSCyI9t583DYfqjs8plRMpAow4DQj7EpjQTFL1ameXLRxqnytxplq4xQoGOPsCFVNujvHHINjc7xcxUSmMSq8NHQeg010bGvoROYagP2T04%2BY8LEg5mipH7TksX4h8zrmsfaEhRrp6rNUtaG81k20nnYtleREe99RNur9vjHDOUdmODhkhvMO8OirGQ5oMQx6TnFXo6Pfb6l3Qpq550AzXQCB11VJNUWueNcTz8p51Ij293XOI3ssygB1MR1cGYDdMTa%2FssStB2wtfr8UsqCvkD1WGYDV7uqeFr9azEI9pR%2BtDc4BSvYVs%2BY2%2FvQE7KYZoK4YFRm%2FnYClZz9loDskAZF1IgIiNDABzcLIc57H95iTNd6OTjKmg%2B%2B%2FgLljHUvEWgNF7PTIiHUGlQydSairZHgHKNlXxJoVgLEQcCjJOJaAg0rG9ErjTWfJmGra07dkmBvaWc7IGx7Jq4epJqkX3tCaUd7sJCWAC%2BvSsrzmpsIRSaFDzby21%2FBgPXbPoTZV0HAsVQOdO52LBv3GcjnxIYpTx3Nm5FxwTlWpRNoapecCUun7GhleCfcjmoST3Xv637wdFemaN2mBYxomkjPCmzJP3MikTn0cX6sTSxoEsvsNIxn9wC%2B7oSQxVnKCuymjmwm6k2PlPM2KLwxOtbHQRKIShLpIwBbO2N8mEmYpgJGQZgK8nQOcWAL8IvTVCXkFwhm7AOkLadfwgNurA8ytsCyfkkTeLAl2eYIzSkSesK2Hxb8yMaVv5PxjAeg1CKclFrxeXWF%2BevAolWeXiBTo4l%2F8hAcKFWfnA%2F2DmbbaeJuGfZ8PzELHM12t3mgyknW%2BXhtCYPB1fi9bc%2FucikP2scv5YYtDWvShru8AgasN1PcSruu3Dn0Xh9zxMXDY6pC2D0Ru1z2EtjFFukB0ZqBo7r95LS7ffzoMZ%2F8D
 
 **Build and run**
+
+**Note: Any services register with Eureka need 30s, it may cause 500 error when you start services and instantly run them**
 
 Run <pre>mvn spring-boot:run</pre> on ConfigServer, Eureka, Zuul, OAuth2 and Zipkin projects first
 

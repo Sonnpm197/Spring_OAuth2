@@ -1,4 +1,5 @@
 # Spring Microservices 
+
 This is my sample of creating an app based on microservices architecture in Spring. Here are my repos
 
 1. ConfigServer: https://github.com/Sonnpm197/Spring_ConfigServer
@@ -13,14 +14,17 @@ This is my sample of creating an app based on microservices architecture in Spri
 10. SampleSleuth: https://github.com/Sonnpm197/Spring_Sleuth
 
 **Setting up**
+
 1. IntelliJ 2019
 2. JDK8 + Maven + Kafka/Zookepper tutorial: https://dzone.com/articles/kafka-with-spring-cloud-stream
 3. Set env variable: ENCRYPT_KEY = IMSYMMETRIC (for decrypt properties from ConfigServer in each service)
 
 **Kafka & Zookeeper**
+
 https://www.cloudkarafka.com/blog/2018-07-04-cloudkarafka_what_is_zookeeper.html
 
 **Download (Do not download Zookeper/Kafka src files)**
+
 Zookeeper: https://www.apache.org/dyn/closer.lua/zookeeper/zookeeper-3.6.1/apache-zookeeper-3.6.1-bin.tar.gz
 
 Kafka: https://www.apache.org/dyn/closer.cgi?path=/kafka/2.5.0/kafka_2.12-2.5.0.tgz
@@ -32,6 +36,7 @@ zookepper: <pre>zkserver</pre>
 kafka: <pre>.\bin\windows\kafka-server-start.bat .\config\server.properties</pre>
 
 **Handling kafka errors**
+
 1. The input line is too long. The syntax of the command is incorrect = change folder to short name (kafka_2.15 -> kafka)
 2. classpath is empty. please build the project first e.g. by running 'gradlew jarall' = you download src file
 

@@ -10,16 +10,17 @@
         <module name="Spring_OAuth2" />
         <module name="Spring_JwtSwaggerAuditing" />
         <module name="Spring_QuizletService" />
-        <module name="organization-service" />
-        <module name="Spring_SampleService" />
-        <module name="licensing-service" />
+        <module name="Spring_Zuul" />
         <module name="Spring_ConfigServer" />
         <module name="Spring_EurekaServer" />
-        <module name="Spring_Zuul" />
+        <module name="Spring_SampleService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="authentication-service" target="1.8" />
+      <module name="licensing-service" target="1.8" />
+      <module name="licensing-service (1)" target="1.8" />
+      <module name="organization-service" target="1.8" />
       <module name="zuulsvr" target="1.8" />
     </bytecodeTargetLevel>
   </component>

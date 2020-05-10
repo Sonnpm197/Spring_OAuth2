@@ -11,11 +11,11 @@
         <module name="Spring_JwtSwaggerAuditing" />
         <module name="Spring_QuizletService" />
         <module name="Spring_Sleuth" />
-        <module name="Spring_Zuul" />
+        <module name="Spring_SampleService" />
         <module name="Spring_ZipkinServer" />
         <module name="Spring_ConfigServer" />
         <module name="Spring_EurekaServer" />
-        <module name="Spring_SampleService" />
+        <module name="Spring_Zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
